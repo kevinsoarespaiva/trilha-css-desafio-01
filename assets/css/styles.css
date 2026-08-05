@@ -1,8 +1,81 @@
+/*<head>*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    font-family: Raleway, Arial;
+    font-family: Raleway, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    line-height: 1.5;
 }
+h1{
+    color: transparent;
+    background-image: none;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-size: 20px 20px;
+    font-size: 40px;
+    font-weight: 900;
+    background-clip: text;
+    text-transform: uppercase;
+}
+p{
+    font-size: 20px;
+}
+/*</head>*/
 /*<header>*/
+.banner{
+    background: linear-gradient(rgb(0, 0, 0, .6), rgba(49, 169, 221, 0.2), rgb(0, 0, 0, .6)), url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid rgba(51, 168, 219, 1) 1px;
+    width: 100%;
+    height: 600px;
+}
+.banner-content{
+    width: 600px;
+    height: 393px;
+    margin-top: 56px;
+    left: 465px;
+    text-align: center;
+}
+.banner, .banner>*{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo{
+    height: 268px;
+    width: 268px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+.logo img{
+    width: inherit;
+    height: inherit;
+}
+.banner-content p{
+    margin: 16px 0 24px;
+}
+.banner-content button{
+    display: flex;
+    padding: 16px 32px;
+    letter-spacing: 21%;
+    width: fit-content;
+    background-color: transparent;
+    color: rgba(49, 168, 221, 1);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-image-source: linear-gradient(rgba(59, 161, 205, 1) rgba(21, 114, 183, 1));
+}
 /*</header>*/
 /*<body>*/
 

@@ -58,18 +58,17 @@ p{
     justify-content: center;
 }
 .logo{
-    height: 268px;
-    width: 268px;
     display: flex;
     justify-content: center;
-    margin: auto;
+    height: 268px;
+    width: 268px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.2);
     margin: 0;
 }
 .logo img{
-    width: inherit;
-    height: inherit;
+    height: 85%;
+    transform: translateY(17px);
 }
 .banner-content p{
     margin: 16px 0 24px;

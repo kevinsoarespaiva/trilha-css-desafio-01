@@ -140,6 +140,23 @@ p{
     font-weight: 900;
     text-transform: lowercase;
 }
+#professional-challenges{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 7%;
+    text-align: center;
+    border-bottom: solid rgb(51, 168, 219) 1px;
+}
+#professional-challenges img{
+    margin: 3%;
+}
+#professional-challenges p{
+    width: 115vh;
+}
+#professional-challenges h2{
+    width: 115vh;
+}
 /*</main>*/
 /*<footer>*/
 

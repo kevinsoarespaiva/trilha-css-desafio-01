@@ -22,10 +22,11 @@ h2{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2rem;
-    line-height: 100%;
     letter-spacing: 19%;
     color: rgb(51, 168, 219);
     margin-bottom: 2.5rem;
+    height: fit-content;
+
 }
 p{
     font-size: 1rem;
@@ -48,7 +49,7 @@ p{
     text-align: center;
 }
 .banner-content p{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .banner, .banner>*{
     display: flex;
@@ -62,7 +63,6 @@ p{
     width: 268px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.2);
-    margin: 0;
 }
 .logo img{
     height: 85%;
@@ -73,42 +73,42 @@ p{
 }
 .banner-content button{
     display: flex;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     letter-spacing: 21%;
     width: fit-content;
     background-color: transparent;
     color: rgba(49, 168, 221, 1);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
     border: 2px solid;
-    border-image-source: linear-gradient(rgba(59, 161, 205, 1) rgba(21, 114, 183, 1));
+    border-image-source: linear-gradient(rgba(59, 161, 205, 1), rgba(21, 114, 183, 1));
+    border-image-slice: 1;
 }
 /*</header>*/
 /*<main>*/
 #course-content{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 70vh;
     justify-content: center;
+    align-content: center;
     text-align: center;
+    width: 100%;
+    min-height: 80vh;
     border-bottom: solid rgba(51, 168, 219, 1) 1px;    
-    padding-bottom: 50px;
 }
 .course-content-text{
-    width: 150vh;
-    padding: 5% 10%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
     box-sizing: content-box;
-    
 }
-.course-content-text div{
-    margin-bottom: 4vh;
+.course-content-text div+div{
+    margin-top: 4vh;
 }
 .module{
     width: 75vh;

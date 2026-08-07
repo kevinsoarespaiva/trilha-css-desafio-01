@@ -4,8 +4,10 @@ body{
     font-family: Raleway, sans-serif;
     background-color: black;
     color: white;
-    box-sizing: border-box;
     line-height: 1.5;
+}
+body *{
+    box-sizing: border-box;   
 }
 h1{
     color: transparent;
@@ -33,27 +35,30 @@ p{
 /*</head>*/
 /*<header>*/
 .banner{
+    display: flex;
+    justify-content: center;
     background: linear-gradient(rgb(0, 0, 0, .6), rgba(49, 169, 221, 0.2), rgb(0, 0, 0, .6)), url(../images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid rgb(51, 168, 219) 1px;
     width: 100%;
     min-height: 90vh;
+    padding: 1rem;
 }
 .banner-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 600px;
-    height: 393px;
+    min-height: 393px;
     margin-top: 3.5rem;
     text-align: center;
 }
 .banner-content p{
     font-size: 1.25rem;
-}
-.banner, .banner>*{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .logo{
     display: flex;
@@ -96,6 +101,7 @@ p{
     text-align: center;
     width: 100%;
     min-height: 80vh;
+    padding: 1rem;
     border-bottom: solid rgba(51, 168, 219, 1) 1px;    
 }
 .course-content-text{
@@ -140,14 +146,20 @@ p{
 }
 #professional-challenges{
     display: flex;
+    justify-content: center;    
+    border-bottom: solid rgb(51, 168, 219) 1px;
+}
+#professional-challenges-wrapper{
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    width: 100%;
+    max-width: 80vw;
     min-height: 110vh;
     padding: 2rem;
     text-align: center;
-    border-bottom: solid rgb(51, 168, 219) 1px;
 }
 #professional-challenges img{
     margin: 1rem;

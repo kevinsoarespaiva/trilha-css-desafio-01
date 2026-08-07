@@ -26,7 +26,6 @@ h2{
     color: rgb(51, 168, 219);
     margin-bottom: 2.5rem;
     height: fit-content;
-
 }
 p{
     font-size: 1rem;
@@ -111,11 +110,12 @@ p{
     margin-top: 4vh;
 }
 .module{
-    width: 75vh;
+    width: 35vw;
     background-color: rgb(37, 37, 37);
     border: 1px solid rgb(51, 168, 219);
     border-radius: 45px;
-    padding: 3%;
+    padding: 1rem;
+    box-shadow: -2px 6px 4px rgba(0, 0, 0, 0.4) inset;
 }
 .modules-list{
     padding-top: 5vh;

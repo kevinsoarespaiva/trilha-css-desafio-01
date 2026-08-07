@@ -8,6 +8,7 @@ body{
 }
 body *{
     box-sizing: border-box;   
+    overflow-wrap: break-word;
 }
 h1{
     color: transparent;
@@ -115,16 +116,21 @@ p{
 .course-content-text div+div{
     margin-top: 4vh;
 }
+.modules-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    width: 100%;
+}
 .module{
-    width: 35vw;
+    width: 70%;
     background-color: rgb(37, 37, 37);
     border: 1px solid rgb(51, 168, 219);
     border-radius: 45px;
     padding: 1rem;
     box-shadow: -2px 6px 4px rgba(0, 0, 0, 0.4) inset;
-}
-.modules-list{
-    padding-top: 5vh;
 }
 .modules-list span{
     color: #33A8DB
@@ -162,9 +168,16 @@ p{
     text-align: center;
 }
 #professional-challenges img{
+    max-width: 100%;
+    height: auto;
     margin: 1rem;
 }
-#professional-challenges h2, p{
+#homem-tablet{
+    margin: 1rem;
+    width: fit-content;
+    max-width: 100%;
+}
+#professional-challenges h2, #professional-challenges p{
     width: 100%;
     max-width: 800px;
 }
@@ -185,5 +198,9 @@ footer a{
     text-decoration: none;
     color: rgb(51, 168, 219);
     font-weight: 700;
+}
+footer img{
+    max-width: 100%;
+    height: auto;
 }
 /*</footer>*/
